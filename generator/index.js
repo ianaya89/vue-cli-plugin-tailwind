@@ -3,5 +3,11 @@ module.exports = (api, options, rootOptions) => {
     api.render('./template', {
       ...options,
     })
+
+    api.extendPackage({
+      dependencies: {
+        'tailwindcss': '^1.1.2'
+      }
+    })
   }
 }

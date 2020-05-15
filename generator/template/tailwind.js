@@ -20,5 +20,10 @@ module.exports = {
   },
   variants: {
     opacity: ['responsive', 'hover']
-  }
+  },
+  purge: [
+    './src/**/*.html',
+    './src/**/*.vue',
+    './src/**/*.jsx',
+  ],
 }
